@@ -108,9 +108,9 @@ const MealEdit = () => {
   return (
     <Container sx={{display: "flex", justifyContent: "center"}}>
         <Paper elevation={3} style={styles.paper}>
-            <h1>Favorite authors</h1>
+            <h1>Speedy Meals</h1>
             <Link to={`/meal/edit/${id}`}>Edit</Link>
-            <p>Edit this author</p>
+            <h3>Update your {name} recipe</h3>
             <form onSubmit={updateMeal}>
                     <FormControl variant="outlined" style={styles.input}>
                         <InputLabel>Dish Name:</InputLabel>
@@ -147,7 +147,7 @@ const MealEdit = () => {
                     </p>
                     )}
                     <Button type="submit" variant="contained" color="primary" style={styles.button}>
-                        Create
+                        Update
                     </Button>
                 </form>
         </Paper>
